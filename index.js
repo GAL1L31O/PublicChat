@@ -5,7 +5,7 @@ const app = express();
 
 app.use(express.static(__dirname + '/public'))
 
-const server = app.listen(process.env.PORT || 3000);
+const server = app.listen(process.env.PORT);
 
 const io = SocketIO(server);
 
